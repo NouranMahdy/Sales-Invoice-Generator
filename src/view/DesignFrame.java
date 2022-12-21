@@ -167,9 +167,9 @@ public class DesignFrame extends javax.swing.JFrame {
         ));
         jScrollPane2.setViewportView(itemstable);
 
-        savebutton.setText("Save");
+        savebutton.setText("Create Item");
 
-        cancelbutton.setText("Cancel");
+        cancelbutton.setText("Delete Item");
 
         jLabel5.setText("Invoice Items");
 
@@ -234,7 +234,7 @@ public class DesignFrame extends javax.swing.JFrame {
                 .addComponent(deleteinvoice)
                 .addGap(121, 121, 121)
                 .addComponent(savebutton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 148, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
                 .addComponent(cancelbutton)
                 .addGap(39, 39, 39))
             .addGroup(layout.createSequentialGroup()

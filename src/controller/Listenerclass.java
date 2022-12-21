@@ -73,12 +73,12 @@ public class Listenerclass implements ActionListener,ListSelectionListener {
                delete();
            break;
            
-           case "Save":
-               savechanges();
+           case "Create Item":
+               createitem();
            break;
            
-           case"Cancel":
-               cancel();
+           case"Delete Item":
+               deleteitem();
            break;
            
            
@@ -133,7 +133,7 @@ private void delete() {
     }
 
 //functions for table 2 save and cancel buttons
-    private void cancel() {
+    private void deleteitem() {
         
         int choosen =d.getInvoicestable().getSelectedRow();
         int selectedr =d.getItemstable().getSelectedRow();
@@ -148,7 +148,7 @@ private void delete() {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     }
-    private void savechanges() {
+    private void createitem() {
         
         saveitem = new Save (d);
         saveitem.setVisible(true);
